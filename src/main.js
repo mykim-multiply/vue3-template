@@ -1,6 +1,10 @@
 import { createApp } from "vue";
 import { Quasar } from "quasar";
-import App from "./App.vue";
 import quasarUserOptions from "./quasar-user-options";
+import App from "./App.vue";
+import store from "./store";
 
-createApp(App).use(Quasar, quasarUserOptions).mount("#app");
+const app = createApp(App);
+app.use(store);
+app.use(Quasar, quasarUserOptions);
+app.mount("#app");

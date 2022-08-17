@@ -22,5 +22,6 @@ module.exports = {
     "no-lone-blocks": "error",
     "require-await": "error",
     "no-eq-null": "error",
+    "no-param-reassign": "off",
   },
 };
