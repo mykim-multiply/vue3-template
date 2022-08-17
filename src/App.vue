@@ -73,6 +73,7 @@
 <script>
   import { ref } from "vue";
   import HelloWorld from "./components/HelloWorld.vue";
+  import { getExample } from "./api/example";
 
   export default {
     name: "LayoutDefault",
@@ -88,9 +89,11 @@
     },
     methods: {
       async apiTest() {
-        await this.$axios.get("/test").then((res) => {
-          console.log("/test로 요청해보기", res);
-        });
+        const res = await getExample();
+        console.log("api import >>", res);
+        // await this.$axios.get("/test").then((res) => {
+        //   console.log("/test로 요청해보기", res);
+        // });
       },
     },
   };

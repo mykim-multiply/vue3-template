@@ -15,6 +15,6 @@ export default function (store) {
     linkActiveClass: "active",
   });
   // 네비게이션 가드
-  // router.beforeEach(async (to, from, next) => {});
+  // routes.beforeEach(async (to, from, next) => {});
   return router;
 }
