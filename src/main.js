@@ -4,9 +4,11 @@ import quasarUserOptions from "./quasar-user-options";
 import App from "./App.vue";
 import store from "./store";
 import router from "./router";
+import axios from "./plugins/axios";
 
 const app = createApp(App);
 app.use(store);
 app.use(router(store));
 app.use(Quasar, quasarUserOptions);
+app.config.globalProperties.$axios = axios;
 app.mount("#app");

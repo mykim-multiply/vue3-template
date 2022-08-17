@@ -62,6 +62,9 @@
     </q-drawer>
 
     <q-page-container>
+      <div>
+        <button @click="apiTest">axios test</button>
+      </div>
       <HelloWorld />
     </q-page-container>
   </q-layout>
@@ -82,6 +85,13 @@
       return {
         leftDrawerOpen: ref(false),
       };
+    },
+    methods: {
+      async apiTest() {
+        await this.$axios.get("/test").then((res) => {
+          console.log("/test로 요청해보기", res);
+        });
+      },
     },
   };
 </script>
