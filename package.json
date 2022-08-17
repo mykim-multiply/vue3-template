@@ -9,7 +9,9 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
+    "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
+    "quasar": "^2.0.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -24,7 +26,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "sass": "1.32.12",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-quasar": "~5.0.1"
   },
   "browserslist": [
     "> 1%",
