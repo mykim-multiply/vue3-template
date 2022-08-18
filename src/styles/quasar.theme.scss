@@ -1,0 +1,5 @@
+:root{
+  --default-font-size: 16px;
+  --default-font-scale: 1;
+  font-size: calc(var(--default-font-size) * var(--default-font-scale));
+}
