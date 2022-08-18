@@ -8,7 +8,7 @@ const routes = [
   // },
 ];
 export default function (store) {
-  console.log("vuex store:", store);
+  // console.log("vuex store:", store);
   const router = createRouter({
     history: createWebHistory(),
     routes,

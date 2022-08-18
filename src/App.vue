@@ -64,6 +64,11 @@
     <q-page-container>
       <div>
         <button @click="apiTest">axios test</button>
+        <br />
+        <select v-model="$i18n.locale">
+          <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+        </select>
+        <div class="text-h3 text-center">🍎는 {{ $t("contents.apple") }} 입니다</div>
       </div>
       <HelloWorld />
     </q-page-container>
