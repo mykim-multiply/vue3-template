@@ -24,5 +24,24 @@ module.exports = {
     "no-eq-null": "error",
     "no-param-reassign": "off",
     "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": [
+      "warn",
+      "never",
+      {
+        vue: "always",
+        css: "always",
+        scss: "always",
+      },
+    ],
+    // eslint-plugin-vue
+    "vue/no-unused-components": "warn",
+    "vue/component-name-in-template-casing": ["error", "PascalCase"],
+    "vue/no-boolean-default": ["error", "default-false"],
+    "vue/v-on-function-call": ["error", "never"],
+    "vue/padding-line-between-blocks": ["error", "always"],
+    "vue/require-direct-export": "error",
+    "vue/no-unused-vars": "warn",
+    "vue/multi-word-component-names": "off",
   },
 };
