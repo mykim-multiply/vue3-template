@@ -1,4 +1,4 @@
-# sh-plate
+# vue3-template
 
 ## Project setup
 ```
