@@ -23,11 +23,3 @@ body.body--dark{
   color: var(--q-dark-font-color);
   background: var(--q-dark-page);
 }
-
-/* layout */
-.q-layout{
-  >.q-page-container{
-    display: flex;
-
-  }
-}
