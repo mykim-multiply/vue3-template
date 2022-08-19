@@ -3,6 +3,9 @@
     <button @click="$q.dark.set(false)">라이트모드</button>
     <button @click="$q.dark.set(true)">다크모드</button>
     <br />
+    <div>
+      {{ $dayjs().format("YYYY년 MM월 DD일 HH:mm:ss SSS [Z] A") }}
+    </div>
     <div class="flex items-center">
       <h5 class="text-h5 q-mr-lg" style="font-size: 16px">글씨배율 변경</h5>
       <q-select v-model="fontScale" :options="fontScaleOptions" label="글씨 배율 설정" style="width: 200px" />
