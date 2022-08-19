@@ -3,7 +3,7 @@
     <q-toolbar>
       <q-btn flat dense round @click="toggleLeftDrawer" aria-label="Menu" icon="menu" />
 
-      <q-toolbar-title>SH Template</q-toolbar-title>
+      <q-toolbar-title>Vue3 Template</q-toolbar-title>
 
       <div>Quasar v{{ $q.version }}</div>
     </q-toolbar>
