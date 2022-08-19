@@ -13,6 +13,7 @@
     "@smartweb/vue-flash-message": "^0.6.10",
     "axios": "^0.27.2",
     "chart.js": "^3.9.1",
+    "cookie-parser": "^1.4.6",
     "core-js": "^3.8.3",
     "dayjs": "^1.11.5",
     "file-saver": "^2.0.5",
