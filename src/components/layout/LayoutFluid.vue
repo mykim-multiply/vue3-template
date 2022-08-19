@@ -1,12 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
-      <q-toolbar>
-        <q-toolbar-title>Quasar App</q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
+    <GlobalHeader />
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -14,9 +8,13 @@
 </template>
 
 <script>
+  import GlobalHeader from "./partials/GlobalHeader";
+
   export default {
     name: "LayoutFluid",
-
+    components: {
+      GlobalHeader,
+    },
     setup() {
       return {};
     },

@@ -1,5 +1,33 @@
+/* root */
 :root{
+  // font
   --default-font-size: 16px;
   --default-font-scale: 1;
   font-size: calc(var(--default-font-size) * var(--default-font-scale));
+  // light palette
+  --q-light-page: #F2F2F2;
+  --q-light-font-color: #000000;
+  // dark palette
+  --q-dark-page: #181818;
+  --q-dark-font-color: #FFFFFF;
+}
+
+/* light theme */
+body{
+  color: var(--q-light-font-color);
+  background: var(--q-light-page);
+}
+
+/* dark theme */
+body.body--dark{
+  color: var(--q-dark-font-color);
+  background: var(--q-dark-page);
+}
+
+/* layout */
+.q-layout{
+  >.q-page-container{
+    display: flex;
+
+  }
 }
