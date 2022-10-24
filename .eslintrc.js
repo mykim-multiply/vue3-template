@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: ["vue", "prettier"],
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", { endOfLine: "auto"}],
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
     "no-console": "off",
@@ -43,5 +43,9 @@ module.exports = {
     "vue/require-direct-export": "error",
     "vue/no-unused-vars": "warn",
     "vue/multi-word-component-names": "off",
+    "vue/valid-v-on": "off",
+    "vue/no-boolean-default": "off",
+    "no-underscore-dangle": "off",
+    "no-return-await": "off",
   },
 };
