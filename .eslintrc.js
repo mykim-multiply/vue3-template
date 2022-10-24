@@ -34,6 +34,7 @@ module.exports = {
         scss: "always",
       },
     ],
+    camelcase: "off",
     // eslint-plugin-vue
     "vue/no-unused-components": "warn",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
